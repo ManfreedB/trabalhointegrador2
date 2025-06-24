@@ -1,0 +1,228 @@
+.max {
+  width: 100%;
+}
+
+.containerListagemFuncionario {
+  width: 80%;
+  margin: 10%;
+  max-height: 80%;
+  height: fit-content;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+.scroll {
+  overflow-y: scroll;
+  overflow-x: scroll;
+  max-height: 400px;
+  width: 100%;
+  height: fit-content;
+}
+
+
+.inside-container-listagem-funcionario {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+
+.form-group-listagem-funcionario {
+  margin-bottom: 20px;
+}
+
+
+.form-group-listagem-funcionario label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+.listagemFuncionario {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex: 1;
+  padding: 0;
+}
+
+
+.listagemFuncionario .header {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  background-color: #6c757d;
+  color: #ffffff;
+  padding: 15px 30px 15px 15px;
+  font-weight: bold;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+  gap: 10px;
+}
+
+
+.listagemFuncionario .item {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+  gap: 10px;
+}
+
+.listagemFuncionario .item:hover {
+  background-color: #f8f9fa;
+}
+
+
+.listagemFuncionario .header span,
+.listagemFuncionario .item span {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.listagemFuncionario .actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+.listagemFuncionario .actions button {
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+
+.listagemFuncionario .actions button.deletar {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.listagemFuncionario .actions button.deletar:hover {
+  background-color: #c82333;
+}
+
+
+.listagemFuncionario .actions button.alterar {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.listagemFuncionario .actions button.alterar:hover {
+  background-color: #0056b3;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.modal .form-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.modal .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.modal .form-group input,
+.modal .form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: small;
+  box-sizing: border-box;
+}
+
+.modal .form-group input[type="password"] {
+  letter-spacing: 1px;
+}
+
+.modal button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: small;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.modal button:hover {
+  background-color: #45a049;
+}
+
+.modal button.close {
+  background-color: #f44336;
+  margin-top: 10px;
+}
+
+.modal button.close:hover {
+  background-color: #e53935;
+}

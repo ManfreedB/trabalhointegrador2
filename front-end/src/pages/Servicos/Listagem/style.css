@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f5f7;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.containerService {
+  width: 80%;
+  margin: 0 10%;
+  height: fit-content;
+  overflow-y: auto;
+  overflow-x: auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.maxService {
+  width: 80%;
+}
+
+.scroll {
+  overflow-y: scroll;
+  max-height: 400px;
+  width: 100%;
+  height: fit-content;
+}
+
+.inside-container-service {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.form-group-service {
+  margin-bottom: 20px;
+}
+
+.form-group-service label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.listagemService {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  overflow-y: auto;
+  flex: 1;
+  padding: 0;
+}
+
+.listagemService .header {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr;
+  background-color: #6c757d;
+  color: #ffffff;
+  padding: 15px;
+  font-weight: bold;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+  gap: 10px;
+}
+
+.listagemService .item {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+  gap: 10px;
+}
+
+.listagemService .item:hover {
+  background-color: #f8f9fa;
+}
+
+.listagemService .header span,
+.listagemService .item span {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.listagemService .actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.listagemService .actions button {
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.listagemService .actions button.deletar {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.listagemService .actions button.deletar:hover {
+  background-color: #c82333;
+}
+
+.listagemService .actions button.alterar {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.listagemService .actions button.alterar:hover {
+  background-color: #0056b3;
+}
